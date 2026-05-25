@@ -1,0 +1,6 @@
+{
+  "name": "أكاديمية الذكر",
+  "description": "أكاديمية متخصصة في تحفيظ القرآن الكريم وتعليم التجويد أونلاين للأطفال والكبار في المملكة العربية السعودية والخليج.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

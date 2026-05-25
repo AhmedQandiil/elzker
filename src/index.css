@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Tajawal", system-ui, -apple-system, sans-serif;
+  --font-display: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
+  
+  --color-primary-brand: #12351F;
+  --color-primary-light: #1F5634;
+  --color-primary-dark: #0A2113;
+
+  --color-gold-brand: #B98A3A;
+  --color-gold-light: #D6B064;
+  --color-gold-dark: #8F6828;
+
+  --color-cream-brand: #F8F5EC;
+  --color-soft-green: #EEF7F1;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Custom Islamic arches / patterns in pure CSS background */
+.islamic-pattern {
+  background-color: #12351F;
+  background-image: radial-gradient(circle at 100% 150%, #12351F 24%, #1f5634 25%, #1f5634 28%, #12351F 29%, #12351F 36%, #1f5634 36%, #1f5634 40%, transparent 40%, transparent),
+                    radial-gradient(circle at 0    150%, #12351F 24%, #1f5634 25%, #1f5634 28%, #12351F 29%, #12351F 36%, #1f5634 36%, #1f5634 40%, transparent 40%, transparent),
+                    radial-gradient(circle at 50%  100%, #1f5634 10%, #12351F 11%, #12351F 23%, #1f5634 24%, #1f5634 30%, #12351F 31%, #12351F 43%, #1f5634 44%, #1f5634 50%, transparent 50%, transparent);
+  background-size: 80px 40px;
+}
+
+.islamic-pattern-light {
+  background-color: #f8f5ec;
+  background-image: radial-gradient(circle at 100% 150%, #f8f5ec 24%, rgba(185, 138, 58, 0.05) 25%, rgba(185, 138, 58, 0.05) 28%, #f8f5ec 29%, #f8f5ec 36%, rgba(185, 138, 58, 0.05) 36%, rgba(185, 138, 58, 0.05) 40%, transparent 40%, transparent),
+                    radial-gradient(circle at 0    150%, #f8f5ec 24%, rgba(185, 138, 58, 0.05) 25%, rgba(185, 138, 58, 0.05) 28%, #f8f5ec 29%, #f8f5ec 36%, rgba(185, 138, 58, 0.05) 36%, rgba(185, 138, 58, 0.05) 40%, transparent 40%, transparent),
+                    radial-gradient(circle at 50%  100%, rgba(185, 138, 58, 0.05) 10%, #f8f5ec 11%, #f8f5ec 23%, rgba(185, 138, 58, 0.05) 24%, rgba(185, 138, 58, 0.05) 30%, #f8f5ec 31%, #f8f5ec 43%, rgba(185, 138, 58, 0.05) 44%, rgba(185, 138, 58, 0.05) 50%, transparent 50%, transparent);
+  background-size: 80px 40px;
+}
+
+/* Custom styles for animations and premium glowing edges */
+.glow-gold-sm {
+  box-shadow: 0 0 10px rgba(185, 138, 58, 0.15);
+}
+
+.glow-gold-lg {
+  box-shadow: 0 10px 40px rgba(185, 138, 58, 0.3);
+}
+
+.glow-primary-lg {
+  box-shadow: 0 10px 40px rgba(18, 53, 31, 0.25);
+}
+
+/* Mosque arch curve border */
+.mosque-arch {
+  border-top-left-radius: 50% 100px;
+  border-top-right-radius: 50% 100px;
+}
